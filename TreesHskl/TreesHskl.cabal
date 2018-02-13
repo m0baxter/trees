@@ -1,0 +1,21 @@
+name:                TreesHskl
+version:             0.1.0.0
+synopsis:            Trees implemented in Haskell
+-- description:
+homepage:            https://github.com/githubuser/TreesHskl#readme
+license:             MIT
+license-file:        LICENSE
+author:              Matthew Baxter
+-- maintainer:          @example.com
+copyright:           2018 Matthew Baxter
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable TreesHskl
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+
