@@ -7,8 +7,8 @@ data BinaryTree a = Leaf | Node (BinaryTree a) a (BinaryTree a)
 --Make this balanced?
 insert :: Ord a => a -> BinaryTree a -> BinaryTree a
 insert a Leaf = Node Leaf a Leaf
-insert b (Node left a right)
-      | b == a = Node left a right
+insert b t@(Node left a right)
+      | b == a = t
       | b < a  = Node (insert b left) a right
       | b > a  = Node left a (insert b right)
 
